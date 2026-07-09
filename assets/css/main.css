@@ -20,7 +20,7 @@ Version: 1.0.0
   --theme4: #57b33e;
   --theme5: #ff7029;
   --header: #1C2539;
-  --base: #DF0A0A;
+  --base: #ed2344;
   --text: #5D666F;
   --text2: #FFFFFFA3;
   --it-text: #FFFFFF8C;
@@ -2014,7 +2014,8 @@ p {
   z-index: 9999;
 }
 
-.main-header-1 .main-logo img {
+.main-header-1 .main-logo img,
+.main-header-2 .main-logo img {
   height: 100px;
 }
 
@@ -2115,6 +2116,7 @@ p {
 
 .main-header-2 .header-2 .menu .main-menu ul {
   position: relative;
+  padding-left: 40px;
 }
 
 .main-header-2 .header-2 .menu .main-menu ul li {
@@ -2132,20 +2134,21 @@ p {
 }
 
 .main-header-2 .header-2 .menu .main-menu ul li.active>a {
-  color: var(--white);
+  color: var(--base);
 }
 
 .main-header-2 .header-2 .menu .main-menu ul li a {
   display: block;
-  padding: 30px 0;
+  padding: 30px 10px;
   text-decoration: none;
-  text-transform: capitalize;
+  text-transform: uppercase;
   position: relative;
-  color: var(--white);
+  color: var(--header);
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
+  letter-spacing: .5px;
 }
 
 .main-header-2 .header-2 .menu .main-menu ul li a:after {
@@ -2164,7 +2167,7 @@ p {
 }
 
 .main-header-2 .header-2 .menu .main-menu ul li a:hover {
-  color: var(--theme2);
+  color: var(--base);
 }
 
 .main-header-2 .header-2 .menu .main-menu ul li a:hover:after {
@@ -2374,6 +2377,8 @@ header-area.style-2 {
   z-index: 999;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+  background-color: var(--white);
+
 }
 
 .header-menu-area.fixed-header {
@@ -2759,7 +2764,7 @@ header-area.style-2 {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: end;
 }
 
 @media (max-width: 1199px) {
@@ -2853,15 +2858,15 @@ header-area.style-2 {
 }
 
 .header-menu-area .header-menu-items .menu-components.style-two .contact-info-items .icon i {
-  color: var(--white);
+  color: var(--header);
 }
 
 .header-menu-area .header-menu-items .menu-components.style-two .contact-info-items .content p {
-  color: #FFFFFF8C;
+  color: var(--header);
 }
 
 .header-menu-area .header-menu-items .menu-components.style-two .contact-info-items .content h6 {
-  color: var(--white);
+  color: var(--header);
 }
 
 .header-menu-area .header-menu-items .menu-components.style-two .header-button-2 .theme-btn {
@@ -3125,7 +3130,7 @@ header-area.style-2 {
 }
 
 .breadcrumb-wrapper {
-  padding: 130px 0;
+  padding: 200px 0 90px 0;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
@@ -3466,7 +3471,7 @@ header-area.style-2 {
 
 .hero-1 .slide-bg {
   position: relative;
-  padding: 160px 0;
+  padding: 240px 0 160px 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3503,8 +3508,12 @@ header-area.style-2 {
 }
 
 .hero-1 .slide-bg .hero-content {
-  position: relative;
+  position: absolute;
   z-index: 9;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 575px) {
@@ -3528,7 +3537,6 @@ header-area.style-2 {
   color: var(--white);
   margin-top: 20px;
   display: block;
-  border-left: 3px solid var(--white);
   padding-left: 20px;
 }
 
@@ -5244,6 +5252,20 @@ header-area.style-2 {
   padding: 30px;
 }
 
+.single-service-style-1 .content .service-title {
+  width: 100%;
+}
+
+.single-service-style-1 .content .service-title h3 {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+
 @media (max-width: 575px) {
   .single-service-style-1 .content {
     padding: 25px 30px;
@@ -5253,7 +5275,7 @@ header-area.style-2 {
 .single-service-style-1 .content .d-flex {
   gap: 20px;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 575px) {
@@ -5268,6 +5290,7 @@ header-area.style-2 {
 
 .single-service-style-1 .content p {
   padding-top: 30px;
+  height: 85px;
 }
 
 @media (max-width: 575px) {
@@ -12824,4 +12847,16 @@ p.sticky-label {
 
 .single-funfact-items .single-circle-bar .circle-bar .right.color-2 {
   background-color: var(--theme5);
+}
+
+/* custom css*/
+
+.normal-logo img,
+.logo-sticky img {
+  height: 80px;
+}
+
+.whatsapp-icon .fab {
+  color: #25D366 !important;
+  font-size: 24px;
 }

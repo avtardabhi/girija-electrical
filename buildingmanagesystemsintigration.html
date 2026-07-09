@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+  <!-- Header Area -->
+  <head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="modinatheme" />
+    <!-- ======== Page title ============ -->
+    <title>BUILDING MANAGEMENT SYSTEM (BMS) DESIGN & SYSTEM INTEGRATION</title>
+    <!-- Favcion -->
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.png" />
+    <!-- Bootstrap min.css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Font Awesome.css -->
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!-- Magnific Popup.css -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- MeanMenu.css -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <!-- Swiper Bundle.css -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <!-- Nice Select.css -->
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <!-- Main.css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- template main style css file -->
+  </head>
+  <!-- Body Area -->
+  <body>
+    <!-- Preloader Section Here -->
+    <div id="preloader" class="preloader">
+      <div class="animation-preloader">
+        <div class="spinner style-2"></div>
+        <div class="txt-loading">
+          <span data-text-preloader="G" class="letters-loading"> G </span>
+          <span data-text-preloader="I" class="letters-loading"> I </span>
+          <span data-text-preloader="R" class="letters-loading"> R </span>
+          <span data-text-preloader="I" class="letters-loading"> I </span>
+          <span data-text-preloader="J" class="letters-loading"> J </span>
+          <span data-text-preloader="A" class="letters-loading"> A </span>
+        </div>
+        <p class="text-center">Loading</p>
+      </div>
+      <div class="loader">
+        <div class="row">
+          <div class="col-3 loader-section section-left">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-left">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-right">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-right">
+            <div class="bg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header Section Here -->
+    <header class="main-header-2">
+      <!-- Header Nav Menu Start -->
+      <div class="header-menu-area sticky-header">
+        <div class="container-fluid">
+          <div class="header-menu-items header-2">
+            <div class="row align-items-center">
+              <div class="col-xxl-8 col-xl-8">
+                <div class="menu">
+                  <div class="sticky-logo-2">
+                    <a href="index.html" class="normal-logo">
+                      <img src="assets/img/logo/logo.png" alt="logo-img" />
+                    </a>
+                    <a href="index.html" class="logo-sticky">
+                      <img src="assets/img/logo/logo.png" alt="logo-img" />
+                    </a>
+                  </div>
+                  <nav id="main-menu" class="main-menu">
+                    <ul>
+                      <li class="active">
+                        <a href="#">Home</a>
+                      </li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Service</a></li>
+                      <li><a href="#">Projects</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-xl-4">
+                <div class="menu-components style-two">
+                  <div class="contact-info-items me-5">
+                    <div class="icon">
+                      <i class="far fa-phone-volume"></i>
+                    </div>
+                    <div class="content">
+                      <p>Call</p>
+                      <h6>+91 9669 3636 39</h6>
+                    </div>
+                  </div>
+                  <div class="contact-info-items">
+                    <div class="icon whatsapp-icon">
+                      <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="content">
+                      <p>Chat on WhatsApp</p>
+                      <h6>+91 9669 3636 39</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-menu-bar d-xl-none text-end">
+                  <a href="#" class="mobile-menu-toggle-btn"
+                    ><i class="fal fa-bars"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Menu Sidebar Section Start -->
+    <div class="menu-sidebar-area">
+      <div class="menu-sidebar-wrapper">
+        <div class="menu-sidebar-close">
+          <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
+            <i class="fal fa-times"></i>
+          </button>
+        </div>
+        <div class="menu-sidebar-content">
+          <div class="menu-sidebar-logo">
+            <a href="index.html">
+              <img src="assets/img/logo/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="mobile-nav-menu"></div>
+          <div class="info-main-items">
+            <div class="info-title">
+              <h4>contact Info</h4>
+            </div>
+            <div class="contact-info-items d-flex align-items-center">
+              <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="content">
+                <h5>Our Location</h5>
+                <p>
+                  s34, nilkanth business hub, opposite d-mart, causeway road,
+                  katargam, surat.
+                </p>
+              </div>
+            </div>
+            <div class="contact-info-items d-flex align-items-center">
+              <div class="icon">
+                <i class="fal fa-envelope"></i>
+              </div>
+              <div class="content">
+                <h5>Email Address</h5>
+                <p>info@girijaelectricals.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-items d-flex align-items-center">
+              <div class="icon">
+                <i class="far fa-phone"></i>
+              </div>
+              <div class="content">
+                <h5>Make A Call</h5>
+                <p>+91 9669 3636 39</p>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="theme-btn style-2 mt-5"> contact us </a>
+          <ul class="social-icon">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Breadcrumb Section Here -->
+    <div
+      class="breadcrumb-wrapper"
+      data-background="assets/img/breadcrumb/breadcrumb.jpg"
+    >
+      <div class="container">
+        <div class="page-heading center">
+          <h1>service details</h1>
+          <ul class="breadcrumb-items">
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+            <li>
+              <i class="fas fa-chevron-double-right"></i>
+            </li>
+            <li>
+              BUILDING MANAGEMENT SYSTEM (BMS) DESIGN & SYSTEM INTEGRATION
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+    <!-- Service Details Here -->
+    <section class="service-details section-padding">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-xl-12 order-1 order-md-2">
+            <div class="service-details-content">
+              <div class="details-thumb">
+                <img src="assets/img/service/service14.jpg" alt="details-img" />
+              </div>
+              <div class="content">
+                <h2>
+                  BUILDING MANAGEMENT SYSTEM (BMS) DESIGN & SYSTEM INTEGRATION
+                </h2>
+                <p class="mt-4">
+                  Engineering Intelligent Buildings Through Seamless System
+                  Integration
+                </p>
+                <p class="mt-4">
+                  Modern buildings rely on multiple electrical and low-voltage
+                  systems working together as one intelligent ecosystem. At
+                  GIRIJA, we design and coordinate Building Management Systems
+                  (BMS) that integrate critical building services into a
+                  centralized platform for efficient monitoring, control and
+                  operational management.
+                </p>
+                <p class="mt-4">
+                  Our engineering approach ensures seamless coordination between
+                  electrical infrastructure, life safety systems and building
+                  automation, enabling improved operational efficiency, energy
+                  management and enhanced occupant safety.
+                </p>
+                <p class="mt-4">
+                  Intelligent buildings are not created by individual
+                  systems—they are engineered through seamless integration.
+                </p>
+
+                <h3 class="mt-5">Key Deliverables</h3>
+                <div class="list-item">
+                  <ul class="list">
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Building Management System (BMS) Design
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      BMS Architecture Development
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      BMS Network Layout
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Control Philosophy Development
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      BMS Input / Output (I/O) Schedule
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Equipment Integration Matrix
+                    </li>
+                  </ul>
+                  <ul class="list">
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Communication Network Planning
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Control Room & BMS Workstation Layout
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      BMS Panel Coordination
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Interface & Integration Drawings
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      BOQ & Technical Specifications
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      GFC Drawings & Site Coordination
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="mt-3">ELV & SYSTEM INTEGRATION</h3>
+
+                <p class="mt-3">
+                  We provide engineering coordination and integration for:
+                </p>
+                <div class="list-item">
+                  <ul class="list">
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Fire Alarm System
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      CCTV Surveillance System
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Public Address & Voice Communication System
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Structured Cabling & Data Network
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Access Control System (if applicable)
+                    </li>
+                  </ul>
+                  <ul class="list">
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      HVAC Interface (where applicable)
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Electrical Monitoring System
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      DG & Transformer Monitoring
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Lighting Control System (if applicable)
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Other third-party building systems
+                    </li>
+                  </ul>
+                </div>
+                <h3 class="mt-3">Why It Matters</h3>
+
+                <p class="mt-3">A professionally engineered BMS:</p>
+                <div class="list-item">
+                  <ul class="list">
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Centralizes building monitoring and control.
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Improves operational efficiency.
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Simplifies facility management.
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Enables future system expansion.
+                    </li>
+                  </ul>
+                  <ul class="list">
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Supports energy optimization.
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Enhances fault monitoring.
+                    </li>
+                    <li>
+                      <i class="far fa-chevron-double-right"></i>
+                      Improves life safety coordination.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service Details End -->
+    <!-- Footer Section Here -->
+    <footer class="footer-wrapper section-bg section-padding pb-0">
+      <div class="container">
+        <div class="cta-banner-style-1 wow fadeInUp">
+          <div
+            class="cta-banner"
+            data-background="assets/img/cta-banner/banner1.jpg"
+          >
+            <div class="section-title-content mb-0">
+              <span class="text-white"> Planning a new project? </span>
+              <h2>
+                Let’s build safer, smarter and <br />future-ready infrastructure
+                together.
+              </h2>
+            </div>
+            <a href="contact.html" class="theme-btn bg-style-3">
+              Get Consulting
+            </a>
+          </div>
+        </div>
+        <div class="footer-top section-padding">
+          <div class="row">
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <a href="index.html">
+                    <img src="assets/img/logo/logo.png" alt="footer-logo" />
+                  </a>
+                </div>
+                <p>
+                  GIRIJA Electricals & Engineering Consultants is a Surat-based
+                  engineering consultancy firm specializing in Electrical Design
+                  Consultancy.
+                </p>
+                <ul class="social-icon">
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 ps-sm-5 wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h4>Quick Links</h4>
+                </div>
+                <ul class="list">
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-double-right"></i>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-double-right"></i>
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-double-right"></i>
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-double-right"></i>
+                      Team
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-double-right"></i>
+                      Latest News
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 ps-sm-5 wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h4>Our Services</h4>
+                </div>
+                <ul class="list">
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-double-right"></i>
+                      Electrical Design Consultancy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-double-right"></i>
+                      HT/LT Distribution Design
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-double-right"></i>
+                      Transformer & DG Sizing
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-double-right"></i>
+                      Earthing & Lightning Protection
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fas fa-chevron-double-right"></i>
+                      Fire Alarm System Design
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".8s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h4>Newsletter</h4>
+                </div>
+                <div class="footer-single-newsletter">
+                  <p>
+                    Ut enim ad minima nostrum exercitate ullam corporis suscipit
+                    laboriosa
+                  </p>
+                  <div class="footer-newsletter">
+                    <input
+                      type="email"
+                      name="EMAIL"
+                      placeholder="Email Address"
+                      required=""
+                    />
+                    <button value="submit">Sign Up</button>
+                  </div>
+                  <div class="input-save">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      name="save-for-next"
+                      id="saveForNext"
+                    />
+                    <label for="saveForNext">Every Week Updates</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div
+            class="footer-wrapper d-flex align-items-center justify-content-between"
+          >
+            <p class="wow fadeInLeft" data-wow-delay=".3s">
+              <a href="index.html">Girija Electricals</a> - Copyright 2026. All
+              rights reserved.
+            </p>
+            <ul class="footer-menu wow fadeInRight" data-wow-delay=".4s">
+              <li>
+                <a href="#"> Services </a>
+              </li>
+              <li>
+                <a href="#"> About </a>
+              </li>
+              <li>
+                <a href="#"> Faqs </a>
+              </li>
+              <li>
+                <a href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="scrollUp" class="scroll-icon">
+          <a href="#">
+            <i class="fas fa-chevron-double-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Jquery Latest -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!-- Viewport Js -->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Nice Select Js -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Waypoints Js -->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!-- Counterup Js -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- Swiper Slider Js -->
+    <script src="assets/js/swiper.min.js"></script>
+    <!-- MeanMenu Js -->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!-- Magnific Popup Js -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Magnific Popup Js -->
+    <!-- Wow Animation Js -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Circle Progress Js -->
+    <script src="assets/js/circle-progress.js"></script>
+    <!-- Main.js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
