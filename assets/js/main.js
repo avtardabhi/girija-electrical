@@ -368,7 +368,7 @@
           slidesPerView: 3,
         },
         1199: {
-          slidesPerView: 5,
+          slidesPerView: 4,
         },
       },
     });

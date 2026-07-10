@@ -2147,7 +2147,7 @@ p {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 30px !important;
   letter-spacing: .5px;
 }
 
@@ -2210,11 +2210,13 @@ p {
   padding: 16px 30px 15px;
   border-radius: 4px;
   border: 1px solid #ebeeee;
+  height: 510px;
+  overflow: auto;
 }
 
 .main-header-2 .header-2 .menu .main-menu ul ul li {
   float: none;
-  width: 210px;
+  width: 280px;
 }
 
 .main-header-2 .header-2 .menu .main-menu ul ul li ul {
@@ -2232,6 +2234,7 @@ p {
   margin-left: 0;
   font-size: 16px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .main-header-2 .header-2 .menu .main-menu ul ul li a:hover {
@@ -5239,8 +5242,26 @@ header-area.style-2 {
   margin-top: 30px;
 }
 
+.single-service-style-1 .service-image .post-cat {
+  position: absolute;
+  bottom: 0;
+  right: 8%;
+}
+
+.single-service-style-1 .service-image .post-cat .cat-name {
+  color: var(--white);
+  font-weight: 500;
+  padding: 10px 24px;
+  background-color: var(--base);
+  display: inline-block;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-size: 16px;
+}
+
 .single-service-style-1 .service-image {
   padding: 10px 10px 0px 10px;
+  position: relative;
 }
 
 .single-service-style-1 .service-image img {
@@ -8756,7 +8777,7 @@ header-area.style-2 {
 .it-faq-wrapper .faq-content {
   position: relative;
   z-index: 99;
-  margin-left: 50px;
+  margin-left: 0;
 }
 
 @media (max-width: 991px) {
@@ -11582,7 +11603,7 @@ p.sticky-label {
   padding: 30px 35px;
   border-left: 3px solid var(--theme);
   background-color: #DF0A0A0D;
-  max-width: 430px;
+  max-width: 100%;
 }
 
 @media (max-width: 575px) {
@@ -11932,6 +11953,10 @@ p.sticky-label {
   gap: 20px;
 }
 
+.contact-info-wrapper .info-right .contact-list .icon-item .content {
+  flex: 1;
+}
+
 @media (max-width: 575px) {
   .contact-info-wrapper .info-right .contact-list .icon-item {
     -ms-flex-wrap: wrap;
@@ -12054,6 +12079,11 @@ p.sticky-label {
 @media (max-width: 991px) {
   .footer-wrapper .footer-top {
     padding-top: 50px;
+  }
+
+  .normal-logo img,
+  .logo-sticky img {
+    height: 55px !important;
   }
 }
 
@@ -12424,6 +12454,14 @@ p.sticky-label {
 
   .footer-wrapper .footer-bottom .scroll-icon i {
     font-size: 15px;
+  }
+
+  .hero-1 .slide-bg .hero-content {
+    position: unset;
+    transform: unset;
+    padding-top: 50px;
+    text-align: center;
+
   }
 }
 
