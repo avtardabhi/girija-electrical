@@ -6491,6 +6491,7 @@ header-area.style-2 {
   margin: -90px 80px 0px 80px;
   position: relative;
   z-index: 99;
+  border-radius: 20px;
 }
 
 @media (max-width: 1399px) {
@@ -8777,7 +8778,7 @@ header-area.style-2 {
 .it-faq-wrapper .faq-content {
   position: relative;
   z-index: 99;
-  margin-left: 0;
+  margin-left: 30px;
 }
 
 @media (max-width: 991px) {
@@ -8815,6 +8816,7 @@ header-area.style-2 {
   line-height: 150%;
   font-weight: 600;
   color: var(--white);
+  padding-left: 0;
 }
 
 .it-faq-wrapper .faq-content .accordion-wrap .accordion-item .accordion-header .accordion-button::after {
@@ -8836,6 +8838,7 @@ header-area.style-2 {
 .it-faq-wrapper .faq-content .accordion-wrap .accordion-body {
   background-color: var(--theme2);
   border-top: unset;
+  padding-left: 0;
 }
 
 .it-faq-wrapper .faq-content .accordion-wrap .accordion-body p {
