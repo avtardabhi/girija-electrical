@@ -13674,3 +13674,54 @@ Responsive
   color: var(--theme);
   margin-right: 12px;
 }
+
+section.mission-banner {
+  margin-top: 30px;
+}
+
+.mission-banner .mission-box {
+  background: linear-gradient(135deg, #0A2E63, #0F4D92);
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .12);
+}
+
+.mission-banner .mission-icon {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  border-radius: 50%;
+  background: #05B388;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-banner .mission-icon i {
+  color: #fff;
+  font-size: 40px;
+}
+
+.mission-banner span {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.mission-banner h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.mission-banner h2 strong {
+  color: #05B388;
+}
